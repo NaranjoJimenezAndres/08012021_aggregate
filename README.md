@@ -4,17 +4,17 @@
 * Creación de una base de datos en mongoDB :**ventas_DB**
 * Uso de operadores de **AGGREGATE()** para realizar el análisis a la empresa.
            
-            * **$sum**
-            * **$cond**
-            * **$multiply**
-            * **$divide**
-            * **$max**
-            * **$project, $group, $match**
-            * **$avg**
-            * **$sort**
-            * **$month, $year, $dayOfMonth**
-            * **$addToSet**
-            * **$ifNull**
+            *$sum
+            *$cond
+            *$multiply
+            *$divide
+            *$max
+            *$project, $group, $match
+            *$avg
+            *$sort
+            *$month, $year, $dayOfMonth
+            *$addToSet
+            *$ifNull
             
 
 * **src**
