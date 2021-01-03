@@ -3,6 +3,7 @@
 # TAREA:USO DEL COMANDO AGGREGATE()
 * Creación de una base de datos en mongoDB :**ventas_DB**
 * Uso de operadores de **AGGREGATE()** para realizar el análisis a la empresa.
+           
             * **$sum**
             * **$cond**
             * **$multiply**
@@ -13,10 +14,13 @@
             * **$sort**
             * **$month, $year, $dayOfMonth**
             * **$addToSet**
+            * **$ifNull**
+            
 
 * **src**
 
     **operaciones_aggregate.js**: _Contiene las consultas por el método de agregación_
+    
     **ventas_DB**: _Contiene las consultas por el método find_
 
 * **doc**
