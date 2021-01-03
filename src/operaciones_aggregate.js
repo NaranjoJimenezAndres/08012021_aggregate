@@ -81,7 +81,7 @@ db.ventas.aggregate([{$match: {"Fecha": {
 
 
 
-/* Se quiere saber que mes ha sido el mas fructifero desde la apertura
+/* Se quiere saber que mes ha sido el más fructifero desde la apertura
 de la empresa*/
 
 
@@ -131,9 +131,8 @@ db.ventas.aggregate(
 
 /*ANÁLISIS DE PRODUCTOS*/
 
-/*Para saber que tipo de Nevera se vende mas, se va a 
-visualizar el pedido maximo de cada uno de ellos, y cuantos elementos han comprado
-como maximo por pedido */
+/*Para saber que tipo de Nevera se vende más, se va a 
+visualizar el pedido máximo de cada uno de ellos, y la cantidad máxima por pedido */
 
 db.ventas.aggregate(
     [
@@ -177,7 +176,7 @@ db.ventas.aggregate(
 
 
 /*Dado que el Tipo A es el que más se vende, vamos a ver qué artículo dentro
-del segmento es reporta más beneficios*/
+del segmento es reporta más beneficios (el más caro vendido)*/
 
 
 db.ventas.aggregate(
@@ -197,7 +196,7 @@ db.ventas.aggregate(
 
 
 
-/*Además de saber que marca es la mas popular en el último año, debido al
+/*Además de saber qué marca es la más popular en el último año, debido al
 número de pedidos*/
 
 db.ventas.aggregate(
@@ -218,8 +217,8 @@ db.ventas.aggregate(
 
 /* ANÁLISIS DE CLIENTES*/
 
-/*Se quiere saber cual ha sido el desembolso máximo de cada cliente por pedido y 
-cuantos pedidos ha realizado desde el inicio*/
+/*Se quiere saber cuál ha sido el desembolso máximo de cada cliente por pedido y 
+cual ha sido el pedido más grande realizado por cada uno de ellos*/
  db.ventas.aggregate(
     [
       {
@@ -239,7 +238,7 @@ cuantos pedidos ha realizado desde el inicio*/
 { "_id" : "003", "maxPedido" : 3540, "maxCantidad" : 4 }*/
 
 
-/*Se quiere saber cual ha sido la media de pedidos realizada por cada cliente
+/*Se quiere saber cual ha sido la media de neveras por cada pedido realizado por clientes
  desde el inicio*/
 
 db.ventas.aggregate(
@@ -266,7 +265,7 @@ db.ventas.aggregate(
 
 
 /*Se quiere saber cuantos pedidos ha realizado cada transportista en el último año,
-si se hace menos de los acordados por contrato, la empresa recibe una
+si se hace menos de los acordados por contrato, la empresa sufre una
 penalización*/
 
 db.ventas.aggregate(
